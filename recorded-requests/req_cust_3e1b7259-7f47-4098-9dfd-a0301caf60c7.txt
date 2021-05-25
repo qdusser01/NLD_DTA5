@@ -1,0 +1,10 @@
+GET http://35.180.74.124:8081/jpetstore/images/sign-out.gif HTTP/1.1
+Accept: image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Accept-Encoding: br,deflate,gzip
+Accept-Language: fr,en;q=0.9,fr-FR;q=0.8,en-US;q=0.7
+Proxy-Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Referer: http://35.180.74.124:8081/jpetstore/shop/signon.shtml;jsessionid=BDFD2AD2F7F079BEE2B0BDFEB880EEE3
+Host: 35.180.74.124:8081
+Cookie: JSESSIONID=BDFD2AD2F7F079BEE2B0BDFEB880EEE3
+

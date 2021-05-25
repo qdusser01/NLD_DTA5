@@ -1,0 +1,261 @@
+
+
+
+
+
+
+<html><head><title>JPetStore Demo</title>
+<meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<META HTTP-EQUIV="Cache-Control" CONTENT="max-age=0">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+<meta http-equiv="expires" content="0">
+<META HTTP-EQUIV="Expires" CONTENT="Tue, 01 Jan 1980 1:00:00 GMT">
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+</head>
+
+<body bgcolor="white">
+
+<table background="../images/bkg-topbar.gif" border="0" cellspacing="0" cellpadding="5" width="100%">
+  <tbody>
+  <tr>
+    <td><a href="/jpetstore/shop/index.shtml"><img border="0" src="../images/logo-topbar.gif" /></a></td>
+    <td align="right"><a href="/jpetstore/shop/viewCart.shtml"><img border="0" name="img_cart" src="../images/cart.gif" /></a>
+      <img border="0" src="../images/separator.gif" />
+
+
+
+  
+
+
+
+  
+      <a href="/jpetstore/shop/signoff.shtml"><img border="0" name="img_signout" src="../images/sign-out.gif" /></a>
+      <img border="0" src="../images/separator.gif" />
+      <a href="/jpetstore/shop/editAccountForm.shtml"><img border="0" name="img_myaccount" src="../images/my_account.gif" /></a>
+  
+
+
+      <img border="0" src="../images/separator.gif" /><a href="../help.html"><img border="0" name="img_help" src="../images/help.gif" /></a>
+    </td>
+    <td align="left" valign="bottom">
+      <form name="catalogBean" method="post" action="/jpetstore/shop/searchProducts.shtml">
+        <input name="keyword" size="14" />&nbsp;<input border="0" src="../images/search.gif" type="image" />
+      </form>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+<center>
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=FISH"><img border="0" src="../images/sm_fish.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=DOGS"><img border="0" src="../images/sm_dogs.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=REPTILES"><img border="0" src="../images/sm_reptiles.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=CATS"><img border="0" src="../images/sm_cats.gif" /></a>
+<img border="0" src="../images/separator.gif" />
+<a href="/jpetstore/shop/viewCategory.shtml?categoryId=BIRDS"><img border="0" src="../images/sm_birds.gif" /></a>
+</center>
+
+
+
+
+<!-- Support for non-traditional but simple message -->
+
+
+<!-- Support for non-traditional but simpler use of errors... -->
+
+
+
+
+<P/>
+
+  <H3>Error!</H3>
+  <B><font color="red">com.ibatis.struts.BeanActionException</font></B>
+  <P/>
+  Error dispatching bean action via URL pattern (&#39;newOrder&#39;).  Cause: java.lang.reflect.InvocationTargetException
+
+<P/>
+
+  <h4>Stack</h4>
+  <i><pre>
+com.ibatis.struts.BeanActionException: Error dispatching bean action via URL pattern ('newOrder').  Cause: java.lang.reflect.InvocationTargetException
+Caused by: java.lang.reflect.InvocationTargetException
+	at com.ibatis.struts.BeanAction.execute(BeanAction.java:140)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:507)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor165.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibatis.struts.BeanAction.execute(BeanAction.java:138)
+	... 28 more
+Caused by: com.ibatis.dao.client.DaoException: Failed to update - id [insertOrder] - parameterObject [com.ibatis.jpetstore.domain.Order@4cb0dc18].  Cause: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/ibatis/jpetstore/persistence/sqlmapdao/sql/Order.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the insertOrder-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/ibatis/jpetstore/persistence/sqlmapdao/sql/Order.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the insertOrder-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+	at com.ibatis.dao.client.template.SqlMapDaoTemplate.update(SqlMapDaoTemplate.java:112)
+	at com.ibatis.jpetstore.persistence.sqlmapdao.OrderSqlMapDao.insertOrder(OrderSqlMapDao.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor213.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibatis.dao.engine.impl.DaoProxy.invoke(DaoProxy.java:53)
+	at com.sun.proxy.$Proxy9.insertOrder(Unknown Source)
+	at com.ibatis.jpetstore.service.OrderService.insertOrder(OrderService.java:58)
+	at com.ibatis.jpetstore.presentation.OrderBean.newOrder(OrderBean.java:134)
+	... 32 more
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/ibatis/jpetstore/persistence/sqlmapdao/sql/Order.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the insertOrder-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+	at com.ibatis.sqlmap.engine.mapping.statement.GeneralStatement.executeUpdate(GeneralStatement.java:72)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:279)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:61)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.update(SqlMapClientImpl.java:38)
+	at com.ibatis.dao.client.template.SqlMapDaoTemplate.update(SqlMapDaoTemplate.java:110)
+	... 40 more
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2868)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1573)
+	at com.mysql.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:1169)
+	at com.mysql.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:693)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1404)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1318)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1303)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:58)
+	at com.ibatis.sqlmap.engine.mapping.statement.GeneralStatement.sqlExecuteUpdate(GeneralStatement.java:169)
+	at com.ibatis.sqlmap.engine.mapping.statement.GeneralStatement.executeUpdate(GeneralStatement.java:59)
+	... 44 more
+
+Caused by: 
+java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor165.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibatis.struts.BeanAction.execute(BeanAction.java:138)
+	at org.apache.struts.action.RequestProcessor.processActionPerform(RequestProcessor.java:484)
+	at org.apache.struts.action.RequestProcessor.process(RequestProcessor.java:274)
+	at org.apache.struts.action.ActionServlet.process(ActionServlet.java:1482)
+	at org.apache.struts.action.ActionServlet.doGet(ActionServlet.java:507)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:544)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:698)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:353)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:616)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:831)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1629)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: com.ibatis.dao.client.DaoException: Failed to update - id [insertOrder] - parameterObject [com.ibatis.jpetstore.domain.Order@4cb0dc18].  Cause: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/ibatis/jpetstore/persistence/sqlmapdao/sql/Order.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the insertOrder-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/ibatis/jpetstore/persistence/sqlmapdao/sql/Order.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the insertOrder-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+	at com.ibatis.dao.client.template.SqlMapDaoTemplate.update(SqlMapDaoTemplate.java:112)
+	at com.ibatis.jpetstore.persistence.sqlmapdao.OrderSqlMapDao.insertOrder(OrderSqlMapDao.java:33)
+	at jdk.internal.reflect.GeneratedMethodAccessor213.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at com.ibatis.dao.engine.impl.DaoProxy.invoke(DaoProxy.java:53)
+	at com.sun.proxy.$Proxy9.insertOrder(Unknown Source)
+	at com.ibatis.jpetstore.service.OrderService.insertOrder(OrderService.java:58)
+	at com.ibatis.jpetstore.presentation.OrderBean.newOrder(OrderBean.java:134)
+	... 32 more
+Caused by: com.ibatis.common.jdbc.exception.NestedSQLException:   
+--- The error occurred in com/ibatis/jpetstore/persistence/sqlmapdao/sql/Order.xml.  
+--- The error occurred while applying a parameter map.  
+--- Check the insertOrder-InlineParameterMap.  
+--- Check the statement (update failed).  
+--- Cause: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+	at com.ibatis.sqlmap.engine.mapping.statement.GeneralStatement.executeUpdate(GeneralStatement.java:72)
+	at com.ibatis.sqlmap.engine.impl.SqlMapExecutorDelegate.update(SqlMapExecutorDelegate.java:279)
+	at com.ibatis.sqlmap.engine.impl.SqlMapSessionImpl.update(SqlMapSessionImpl.java:61)
+	at com.ibatis.sqlmap.engine.impl.SqlMapClientImpl.update(SqlMapClientImpl.java:38)
+	at com.ibatis.dao.client.template.SqlMapDaoTemplate.update(SqlMapDaoTemplate.java:110)
+	... 40 more
+Caused by: com.mysql.jdbc.MysqlDataTruncation: Data truncation: Incorrect date value: '' for column 'orderdate' at row 1
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:2868)
+	at com.mysql.jdbc.MysqlIO.sendCommand(MysqlIO.java:1573)
+	at com.mysql.jdbc.ServerPreparedStatement.serverExecute(ServerPreparedStatement.java:1169)
+	at com.mysql.jdbc.ServerPreparedStatement.executeInternal(ServerPreparedStatement.java:693)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1404)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1318)
+	at com.mysql.jdbc.PreparedStatement.executeUpdate(PreparedStatement.java:1303)
+	at com.ibatis.sqlmap.engine.execution.SqlExecutor.executeUpdate(SqlExecutor.java:58)
+	at com.ibatis.sqlmap.engine.mapping.statement.GeneralStatement.sqlExecuteUpdate(GeneralStatement.java:169)
+	at com.ibatis.sqlmap.engine.mapping.statement.GeneralStatement.executeUpdate(GeneralStatement.java:59)
+	... 44 more
+
+  </pre></i>
+
+
+
+
+<p align="center">
+<a href="http://www.ibatis.com"><img border="0" align="center" src="../images/poweredby.gif" /></a>
+</p>

@@ -1,0 +1,11 @@
+GET http://35.180.74.124:8081/jpetstore/shop/viewItem.shtml?itemId=EST-13 HTTP/1.1
+Host: 35.180.74.124:8081
+Proxy-Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://35.180.74.124:8081/jpetstore/shop/viewProduct.shtml?productId=RP-LI-02
+Accept-Encoding: gzip, deflate
+Accept-Language: fr,en;q=0.9,fr-FR;q=0.8,en-US;q=0.7
+Cookie: JSESSIONID=9E20D03CFF20EC8597133BE3090AADBC
+

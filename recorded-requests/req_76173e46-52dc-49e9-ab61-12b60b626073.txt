@@ -1,0 +1,15 @@
+POST http://35.180.74.124:8081/zkspringwf/zkau HTTP/1.1
+Host: 35.180.74.124:8081
+Proxy-Connection: keep-alive
+Content-Length: 141
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+ZK-SID: 6191
+Content-Type: application/x-www-form-urlencoded;charset=UTF-8
+Accept: */*
+Origin: http://35.180.74.124:8081
+Referer: http://35.180.74.124:8081/zkspringwf/spring/main?execution=e1s3
+Accept-Encoding: gzip, deflate
+Accept-Language: fr,en;q=0.9,fr-FR;q=0.8,en-US;q=0.7
+Cookie: JSESSIONID=C5D3BD41A1D974E88B00925E61995C74
+
+dtid=z_9hr&cmd_0=onClick&uuid_0=q7HPg0&data_0=%7B%22pageX%22%3A1262%2C%22pageY%22%3A356%2C%22which%22%3A1%2C%22x%22%3A24%2C%22y%22%3A8.375%7D

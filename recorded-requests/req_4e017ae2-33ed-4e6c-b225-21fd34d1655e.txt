@@ -1,0 +1,16 @@
+POST http://35.180.74.124:8081/jpetstore/shop/signon.shtml HTTP/1.1
+Host: 35.180.74.124:8081
+Proxy-Connection: keep-alive
+Content-Length: 37
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://35.180.74.124:8081
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://35.180.74.124:8081/jpetstore/shop/signonForm.shtml
+Accept-Encoding: gzip, deflate
+Accept-Language: fr,en;q=0.9,fr-FR;q=0.8,en-US;q=0.7
+Cookie: JSESSIONID=869D64777731824C82FC4FB61D5B1B90
+
+username=j2ee&password=****************&x=38&y=12

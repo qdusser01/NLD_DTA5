@@ -1,0 +1,13 @@
+# Project description file
+
+project.name=DTA5
+project.version=8.2
+project.original.version=8.2
+product.name=NeoLoad
+product.original.name=NeoLoad
+product.version=7.9.1
+product.original.version=7.9.1
+project.id=68197ab3-fd17-4dd2-b9ba-3059ac518df3
+project.config.path=config.zip
+project.config.storage=ZIP
+team.server.enabled=false
